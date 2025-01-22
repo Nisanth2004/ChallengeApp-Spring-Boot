@@ -1,14 +1,15 @@
-package com.nisanth.challengeapp;
+package com.nisanth.challengeapp.controller;
 
+import com.nisanth.challengeapp.entity.Challenge;
+import com.nisanth.challengeapp.service.ChallengeService;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
-@RestController("/challenges")
+@RestController
+@RequestMapping("/challenges")
 public class ChallengeController {
 
     private ChallengeService challengeService;
